@@ -6,6 +6,8 @@ Reactive Extension Pack for tvOS 📺
 - `UIFocusEnvironment#rx.didUpdateFocus -> Observable<(UIFocusUpdateContext, UIFocusAnimationCoordinator)>`
 - `UIFocusEnvironment#rx.didUpdateFocus(match:) -> Observable<MatchResult>`
 - `UIView#rx.press(_:) -> Observable<Void>`
+- `UITabBarController#rx.isTabBarHidden`
+- `UISplitViewController#rx.isMasterViewHidden`
 
 # Requirements
 - tvOS9+
