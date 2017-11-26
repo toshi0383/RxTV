@@ -10,6 +10,14 @@
 		1F6F07E71FCA5ED800918C81 /* UIFocusEnvironment+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F07E61FCA5ED800918C81 /* UIFocusEnvironment+Rx.swift */; };
 		1F6F07E91FCA60DB00918C81 /* UIFocusEnvironment+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F07E81FCA60DB00918C81 /* UIFocusEnvironment+RxTests.swift */; };
 		1F6F07EB1FCAB96F00918C81 /* TestableFocusUpdateContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F07EA1FCAB96F00918C81 /* TestableFocusUpdateContext.swift */; };
+		1F9E3B991FCAF3000029A490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E3B981FCAF3000029A490 /* AppDelegate.swift */; };
+		1F9E3B9B1FCAF3000029A490 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E3B9A1FCAF3000029A490 /* SplitViewController.swift */; };
+		1F9E3B9E1FCAF3000029A490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E3B9C1FCAF3000029A490 /* Main.storyboard */; };
+		1F9E3BA01FCAF3000029A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E3B9F1FCAF3000029A490 /* Assets.xcassets */; };
+		1F9E3BA71FCAF3870029A490 /* RxTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE322EE1FBFB4570087809C /* RxTV.framework */; };
+		1F9E3BA81FCAF3870029A490 /* RxTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE322EE1FBFB4570087809C /* RxTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FC77EE11FCAEE6C00411C7D /* UISplitViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC77EE01FCAEE6C00411C7D /* UISplitViewController+Rx.swift */; };
+		1FC77EE31FCAF00200411C7D /* UITabBarController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC77EE21FCAF00200411C7D /* UITabBarController+Rx.swift */; };
 		1FE322F31FBFB4570087809C /* RxTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE322F11FBFB4570087809C /* RxTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FE322FA1FBFB4BC0087809C /* UIPress+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE322F91FBFB4BC0087809C /* UIPress+Rx.swift */; };
 		1FE323041FBFB52E0087809C /* RxTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE322EE1FBFB4570087809C /* RxTV.framework */; };
@@ -24,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F9E3BA51FCAF37F0029A490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FE322E51FBFB4570087809C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE322ED1FBFB4570087809C;
+			remoteInfo = RxTV;
+		};
 		1FE323051FBFB52E0087809C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FE322E51FBFB4570087809C /* Project object */;
@@ -34,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1F9E3BA91FCAF3870029A490 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F9E3BA81FCAF3870029A490 /* RxTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FE3232C1FBFB7B90087809C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +79,14 @@
 		1F6F07E61FCA5ED800918C81 /* UIFocusEnvironment+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFocusEnvironment+Rx.swift"; sourceTree = "<group>"; };
 		1F6F07E81FCA60DB00918C81 /* UIFocusEnvironment+RxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFocusEnvironment+RxTests.swift"; sourceTree = "<group>"; };
 		1F6F07EA1FCAB96F00918C81 /* TestableFocusUpdateContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableFocusUpdateContext.swift; sourceTree = "<group>"; };
+		1F9E3B961FCAF3000029A490 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9E3B981FCAF3000029A490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F9E3B9A1FCAF3000029A490 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		1F9E3B9D1FCAF3000029A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F9E3B9F1FCAF3000029A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9E3BA11FCAF3000029A490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC77EE01FCAEE6C00411C7D /* UISplitViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Rx.swift"; sourceTree = "<group>"; };
+		1FC77EE21FCAF00200411C7D /* UITabBarController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Rx.swift"; sourceTree = "<group>"; };
 		1FE322EE1FBFB4570087809C /* RxTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE322F11FBFB4570087809C /* RxTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxTV.h; sourceTree = "<group>"; };
 		1FE322F21FBFB4570087809C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +101,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F9E3B931FCAF3000029A490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9E3BA71FCAF3870029A490 /* RxTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FE322EA1FBFB4570087809C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,12 +131,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9E3B971FCAF3000029A490 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E3B981FCAF3000029A490 /* AppDelegate.swift */,
+				1F9E3B9A1FCAF3000029A490 /* SplitViewController.swift */,
+				1F9E3B9C1FCAF3000029A490 /* Main.storyboard */,
+				1F9E3B9F1FCAF3000029A490 /* Assets.xcassets */,
+				1F9E3BA11FCAF3000029A490 /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		1FE322E41FBFB4570087809C = {
 			isa = PBXGroup;
 			children = (
 				1FE3230D1FBFB6BF0087809C /* Carthage */,
 				1FE322F01FBFB4570087809C /* RxTV */,
 				1FE323001FBFB52E0087809C /* RxTVTests */,
+				1F9E3B971FCAF3000029A490 /* Example */,
 				1FE322EF1FBFB4570087809C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +159,7 @@
 			children = (
 				1FE322EE1FBFB4570087809C /* RxTV.framework */,
 				1FE322FF1FBFB52D0087809C /* RxTVTests.xctest */,
+				1F9E3B961FCAF3000029A490 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +171,8 @@
 				1FE322F21FBFB4570087809C /* Info.plist */,
 				1FE322F91FBFB4BC0087809C /* UIPress+Rx.swift */,
 				1F6F07E61FCA5ED800918C81 /* UIFocusEnvironment+Rx.swift */,
+				1FC77EE01FCAEE6C00411C7D /* UISplitViewController+Rx.swift */,
+				1FC77EE21FCAF00200411C7D /* UITabBarController+Rx.swift */,
 			);
 			path = RxTV;
 			sourceTree = "<group>";
@@ -172,6 +230,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1F9E3B951FCAF3000029A490 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9E3BA41FCAF3000029A490 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				1F9E3B921FCAF3000029A490 /* Sources */,
+				1F9E3B931FCAF3000029A490 /* Frameworks */,
+				1F9E3B941FCAF3000029A490 /* Resources */,
+				1F9E3BA91FCAF3870029A490 /* Embed Frameworks */,
+				1F9E3BAA1FCAF3BA0029A490 /* carthage copy-frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F9E3BA61FCAF37F0029A490 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 1F9E3B961FCAF3000029A490 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1FE322ED1FBFB4570087809C /* RxTV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE322F61FBFB4570087809C /* Build configuration list for PBXNativeTarget "RxTV" */;
@@ -219,6 +297,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = toshi0383;
 				TargetAttributes = {
+					1F9E3B951FCAF3000029A490 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					1FE322ED1FBFB4570087809C = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
@@ -236,6 +318,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1FE322E41FBFB4570087809C;
 			productRefGroup = 1FE322EF1FBFB4570087809C /* Products */;
@@ -244,11 +327,21 @@
 			targets = (
 				1FE322ED1FBFB4570087809C /* RxTV */,
 				1FE322FE1FBFB52D0087809C /* RxTVTests */,
+				1F9E3B951FCAF3000029A490 /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F9E3B941FCAF3000029A490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9E3BA01FCAF3000029A490 /* Assets.xcassets in Resources */,
+				1F9E3B9E1FCAF3000029A490 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FE322EC1FBFB4570087809C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,12 +358,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F9E3BAA1FCAF3BA0029A490 /* carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/RxCocoa.framework",
+			);
+			name = "carthage copy-frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1F9E3B921FCAF3000029A490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9E3B9B1FCAF3000029A490 /* SplitViewController.swift in Sources */,
+				1F9E3B991FCAF3000029A490 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FE322E91FBFB4570087809C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F6F07E71FCA5ED800918C81 /* UIFocusEnvironment+Rx.swift in Sources */,
+				1FC77EE31FCAF00200411C7D /* UITabBarController+Rx.swift in Sources */,
+				1FC77EE11FCAEE6C00411C7D /* UISplitViewController+Rx.swift in Sources */,
 				1FE322FA1FBFB4BC0087809C /* UIPress+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +412,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F9E3BA61FCAF37F0029A490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FE322ED1FBFB4570087809C /* RxTV */;
+			targetProxy = 1F9E3BA51FCAF37F0029A490 /* PBXContainerItemProxy */;
+		};
 		1FE323061FBFB52E0087809C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FE322ED1FBFB4570087809C /* RxTV */;
@@ -295,7 +424,50 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		1F9E3B9C1FCAF3000029A490 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F9E3B9D1FCAF3000029A490 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1F9E3BA21FCAF3000029A490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		1F9E3BA31FCAF3000029A490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
 		1FE322F41FBFB4570087809C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +502,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/tvOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -389,6 +562,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/tvOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -417,10 +591,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = RxTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -444,10 +614,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = RxTV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -464,10 +630,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = RxTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.RxTVTests;
@@ -481,10 +643,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = RxTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.RxTVTests;
@@ -497,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F9E3BA41FCAF3000029A490 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9E3BA21FCAF3000029A490 /* Debug */,
+				1F9E3BA31FCAF3000029A490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1FE322E81FBFB4570087809C /* Build configuration list for PBXProject "RxTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
