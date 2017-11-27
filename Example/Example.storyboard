@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h1x-32-ySn">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="Bfg-lb-C9f">
+            <objects>
+                <viewController id="h1x-32-ySn" customClass="ExampleViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I1Q-af-ePH"/>
+                        <viewControllerLayoutGuide type="bottom" id="UM3-kE-3fH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="duV-vg-j33">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Mg-16-Ile" customClass="FocusableView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="104" y="68" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zv-Ot-p8E" customClass="FocusableView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="539" y="68" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7V-Co-ZLF" customClass="FocusableView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="1416" y="68" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-eD-CVF" customClass="FocusableView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="979" y="68" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7m-Uj-6AB">
+                                <rect key="frame" x="752" y="694" width="404" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Trigger Animations"/>
+                                <connections>
+                                    <action selector="triggerToggleAnimations" destination="EVO-J8-g6J" eventType="primaryActionTriggered" id="aBm-0N-zvp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w1A-lk-k46"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="6Mg-16-Ile" id="IvO-0Q-YrT"/>
+                        <outlet property="view2" destination="1zv-Ot-p8E" id="6zR-8x-CFB"/>
+                        <outlet property="view3" destination="ui1-eD-CVF" id="oPE-AU-BLU"/>
+                        <outlet property="view4" destination="b7V-Co-ZLF" id="Hgt-QK-Q9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVO-J8-g6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="1320"/>
+        </scene>
+    </scenes>
+</document>
