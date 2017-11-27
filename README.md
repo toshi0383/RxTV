@@ -12,6 +12,7 @@ Reactive Extension Pack for tvOS 📺
 # Requirements
 - tvOS9+
 - Swift4+
+- RxSwift
 
 # Install
 ## Carthage
