@@ -32,12 +32,12 @@ final class ExampleViewController: UIViewController {
         super.viewDidLoad()
         // DEMO: coordinator is still alive!
         rx.didUpdateFocus
-            .subscribe(onNext: { (context, coordinator) in
+            .subscribe(onNext: { [weak self] (context, coordinator) in
                 coordinator.addCoordinatedAnimations({
-                    if context.nextFocusedView == self.view1 {
-                        self.view1.backgroundColor = .yellow
+                    if context.nextFocusedView == self?.view1 {
+                        self?.view1.backgroundColor = .yellow
                     } else {
-                        self.view1.backgroundColor = .white
+                        self?.view1.backgroundColor = .white
                     }
                 }, completion: nil)
             })
@@ -45,12 +45,12 @@ final class ExampleViewController: UIViewController {
 
         // DEMO: coordinator is still alive!
         rx.didUpdateFocus(match: .isDescendantOf(next: view2))
-            .subscribe(onNext: { (matchResult) in
+            .subscribe(onNext: { [weak self] (matchResult) in
                 matchResult.coordinator.addCoordinatedAnimations({
                     if matchResult.isSuccess {
-                        self.view2.backgroundColor = .orange
+                        self?.view2.backgroundColor = .orange
                     } else {
-                        self.view2.backgroundColor = .white
+                        self?.view2.backgroundColor = .white
                     }
                 }, completion: nil)
             })
