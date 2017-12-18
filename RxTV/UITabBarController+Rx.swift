@@ -11,9 +11,11 @@ import RxSwift
 import UIKit
 
 extension Reactive where Base: UITabBarController {
+
     var _isTabBarHidden: Bool {
         return base.tabBar.frame.origin.y < 0
     }
+
     public var isTabBarHidden: Binder<Bool> {
         return Binder(base) { tbc, isHidden in
             if isHidden {
@@ -27,6 +29,7 @@ extension Reactive where Base: UITabBarController {
             }
         }
     }
+    
     private func showTabbar() {
         self.base.tabBar.alpha = 1
         self.base.tabBar.isHidden = false

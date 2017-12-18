@@ -11,23 +11,29 @@ import RxTV
 import UIKit
 
 class FocusableView: UIView {
+
     override var canBecomeFocused: Bool {
         return true
     }
+
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({
             self.transform = context.nextFocusedView == self ? CGAffineTransform(scaleX: 1.1, y: 1.1) : .identity
         }, completion: nil)
         super.didUpdateFocus(in: context, with: coordinator)
     }
+
 }
 
 final class ExampleViewController: UIViewController {
+
     @IBOutlet private weak var view1: FocusableView!
     @IBOutlet private weak var view2: FocusableView!
     @IBOutlet private weak var view3: FocusableView!
     @IBOutlet private weak var view4: FocusableView!
+
     private let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // DEMO: coordinator is still alive!
@@ -66,4 +72,5 @@ final class ExampleViewController: UIViewController {
         }
 
     }
+
 }
