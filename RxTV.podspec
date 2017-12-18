@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RxTV'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Reactive Extension Pack for tvOS 📺'
   s.description      = <<-DESC
         'Reactive Extension Pack for tvOS 📺'
